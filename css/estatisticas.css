@@ -1,0 +1,263 @@
+/* artista da semana */
+
+.artist-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 310px;
+
+    background-color: var(--cor-dark);
+}
+
+.artist-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 70px;
+}
+
+.artist-info h1 {
+    margin-bottom: 24px;
+
+    font-size: 30px;
+}
+
+.stat-label {
+    margin-bottom: 6px;
+
+    font-size: 16px;
+}
+
+.artist-info h2 {
+    margin-bottom: 6px;
+
+    font-size: 15px;
+}
+
+.artist-info p {
+    font-size: 15px;
+}
+
+.artist-button {
+    width: fit-content;
+
+    margin-top: 22px;
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    background-color: var(--cor-verde);
+    color: var(--cor-verde);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.artist-image {
+    height: 100%;
+}
+
+.artist-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* estatisticas principais */
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 70px;
+
+    padding: 50px 70px;
+}
+
+.top-tracks h2 {
+    margin-bottom: 25px;
+
+    font-size: 22px;
+}
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.track img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 12px;
+
+    flex: 1;
+}
+
+.track-info span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.track-info small {
+    font-size: 9px;
+}
+
+.track-time {
+    padding-right: 15px;
+
+    font-size: 12px;
+}
+
+/* resumo */
+
+.statistics-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 18px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    background-color: var(--cor-branco);
+    color: var(--cor-dark);
+}
+
+.summary-item h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.summary-item p {
+    font-size: 13px
+}
+
+/* historico */
+
+.listening-history {
+    margin: 20px 70px 70px;
+
+    padding: 30px;
+
+    background-color: var(--cor-dark);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+}
+
+.chart-legend {
+    display: flex;
+    gap: 20px;
+
+    font-size: 10px;
+}
+
+.chart {
+    height: 300px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    gap: 30px;
+}
+
+.chart-column {
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 4px;
+
+    position: relative;
+}
+
+.chart-bar {
+    width: 32px;
+
+    display: block;
+}
+
+.chart-bar.listened {
+    height: 180px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks {
+    height: 90px;
+
+    background-color: var(--cor-laranja);
+}
+
+.chart-column small {
+    position: absolute;
+    bottom: -25px;
+
+    font-size: 10px;
+}
+
+/* generos musicais */
+
+.music-genres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    padding: 20px 70px 100px;
+}
+
+.genre {
+    text-align: center;
+}
+
+.genre h2 {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+}
+
+.genre-percentage span {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.genre-rap .genre-percentage {
+    border-color: var(--cor-amarelo);
+}
+
+.genre-mpb .genre-percentage {
+    border-color: var(--cor-laranja)
+}
