@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas | MusicHU</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- cabecalho principal do site -->
+     <header class="header">
+        <nav class="navbar">
+            <!-- ao clicar, volta para a pagina inicial -->
+             <a href="index.html" class="logo">
+                MusicHUB
+             </a>
+
+             <!-- links navegacao -->
+              <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="playlists.html">Playlists</a>
+                </li>
+
+                <li>
+                    <a href="estatisticas.html" aria-current="page">
+                        Estatísticas
+                    </a>
+                </li>
+              </ul>
+
+              <!-- area do usuario -->
+               <div class="user-area">
+                <span class="user-name">Patrick</span>
+
+                <!-- futuramente abrir mini perfil -->
+                 <button class="profile-button" type="button">
+                    <img src="img/profile.jpg" alt="Foto de perfil de Patrick">
+                 </button>
+               </div>
+        </nav>
+     </header>
+
+     <!-- conteudo principal da pagina -->
+      <main>
+
+        <!-- artista da semana -->
+         <section class="artist-highlight">
+            <div class="artist-info">
+                <h1>Estatísticas</h1>
+                <p class="stat-label">Artista da semana</p>
+                <h2>Daniel Caesar</h2>
+                <p>847 min ouvidos</p>
+                <a href="#" class="artist-button">Tocar artista</a>
+            </div>
+            <figure class="artist-image"><img src="img/daniel-caesar.jpg" alt="Daniel Caesar"></figure>
+         </section>
+
+         <!-- estatisticas principais -->
+          <section class="statistics">
+            <div class="top-tracks">
+                <h2>Top Tracks</h2>
+                <ol class="track-list">
+                    <li class="track">
+                        <img src="img/track-1.jpg" alt="Capa da música Superpower">
+                        <div class="track-info">
+                            <span>Japanese Denim</span>
+                            <small>Daniel Caesar</small>
+                        </div>
+                        <span class="track-time">122</span>
+                    </li>
+
+                    <li class="track">
+                        <img src="img/track-2.jpg" alt="Capa da música I Bet on Losing Dogs">
+                        <div class="track-info">
+                            <span>I Bet on Losing Dogs</span>
+                            <small>Mitski</small>
+                        </div>
+                        <span class="track-time">86</span>
+                    </li>
+
+                    <li class="track">
+                        <img src="img/track-3" alt="Capa da música Mulher Homem Bicho">
+                        <div class="track-info">
+                            <span>Mulher Homem Bicho</span>
+                            <small>Ana Frango Elétrico</small>
+                        </div>
+                        <span class="track-time">73</span>
+                    </li>
+
+                    <li class="track">
+                        <img src="img/track-4" alt="Capa da música Antes do fim da trama">
+                        <div class="track-info">
+                            <span>Antes do fim da trama</span>
+                            <small>Yung Vegan</small>
+                        </div>
+                        <span class="track-time">40</span>
+                    </li>
+
+                    <li class="track">
+                        <img src="img/track-5" alt="Capa da música Banho de Sol">
+                        <div class="track-info">
+                            <span>Banho de Sol</span>
+                            <small>Baco Exu do Blues</small>
+                        </div>
+                        <span class="track-time">22</span>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- resumo estatisticas -->
+             <aside class="statistics-summary">
+                <div class="summary-iten">
+                    <h3>Artistas</h3>
+                    <p>164</p>
+                </div>
+
+                <div class="summary-iten">
+                    <h3>Álbuns</h3>
+                    <p>11</p>
+                </div>
+                
+                <div class="summary-iten">
+                    <h3>Tracks</h3>
+                    <p>333</p>
+                </div>
+             </aside>
+          </section>
+
+          <!-- historico de musicas ouvidas -->
+           <section class="listening-history">
+            <header class="section-header">
+                <h2>Historico de reprodução</h2>
+                <div class="chart-legend">
+                    <span>Tempo escutado</span>
+                    <span>Faixas tocadas</span>
+                </div>
+            </header>
+
+            <!-- area reservada para o grafico -->
+             <div class="chart" aria-label="Gráfico de músicas ouvidas por dia">
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>seg</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>ter</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>qua</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>qui</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>sex</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>sáb</small>
+                </div>
+
+                <div class="chart-column">
+                    <span class="chart-bar listened"></span>
+                    <span class="chart-bar tracks"></span>
+                    <small>dom</small>
+                </div>
+             </div>
+           </section>
+
+           <!-- generos musicais -->
+            <section class="music-genres">
+                <article class="genre genre-rnb">
+                    <h2>R&B</h2>
+                    <div class="genre-percentage">
+                        <span>40%</span>
+                    </div>
+                </article>
+
+                <article class="genre genre-rap">
+                    <h2>RAP</h2>
+                    <div class="genre-percentage">
+                        <span>40%</span>
+                    </div>
+                </article>
+
+                <article class="genre genre-mpb">
+                    <h2>MPB</h2>
+                    <div class="genre-percentage">
+                        <span>20%</span>
+                    </div>
+                </article>
+            </section>
+      </main>
+
+      <!-- rodape -->
+       <footer class="footer">
+        <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+
+        <div class="footer-logo">MusicHUB</div>
+
+        <div class="footer-info">
+            <p>MusicHUB © 2026. Todos os direitos reservados.</p>
+
+            <nav aria-label="Navegação do rodapé">
+                <a href="#">Sobre</a>
+                <a href="#">Notícias</a>
+                <a href="#">Eventos</a>
+                <a href="#">API</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+       </footer>
+       
+       <script src="script.js"></script>
+       
+</body>
+</html>

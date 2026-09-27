@@ -1,0 +1,446 @@
+/* artista da semana */
+
+.artist-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 310px;
+
+    background-color: var(--cor-dark);
+}
+
+.artist-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 70px;
+}
+
+.artist-info h1 {
+    margin-bottom: 24px;
+
+    font-size: 30px;
+}
+
+.stat-label {
+    margin-bottom: 6px;
+
+    font-size: 16px;
+}
+
+.artist-info h2 {
+    margin-bottom: 6px;
+
+    font-size: 15px;
+}
+
+.artist-info p {
+    font-size: 15px;
+}
+
+.artist-button {
+    width: fit-content;
+
+    margin-top: 22px;
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    background-color: var(--cor-verde);
+    color: var(--cor-dark);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.artist-image {
+    height: 100%;
+}
+
+.artist-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* estatisticas principais */
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+
+    gap: 40px;
+
+    padding: 26px 70px 60px;
+}
+
+/* top tracks */
+
+.top-tracks h2 {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.track {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    height: 38px;
+
+    overflow: hidden;
+
+    background-color: var(--cor-verde-claro);
+    color: var(--cor-dark);
+}
+
+.track img {
+    position: relative;
+
+    width: 38px;
+    height: 38px;
+
+    object-fit: cover;
+
+    z-index: 2;
+}
+
+.track-info {
+    position: relative;
+
+    width: 150px;
+
+    padding-left: 8px;
+
+    z-index: 2;
+}
+
+.track-info span {
+    display: block;
+
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.track-info small {
+    display: block;
+
+    font-size: 5px;
+}
+
+.track-progress {
+    position: absolute;
+
+    left: 38px;
+    top: 0;
+    bottom: 0;
+
+    width: calc(100% - 38px);
+
+    z-index: 1;
+}
+
+.track-progress span {
+    display: block;
+
+    height: 100%;
+
+    background-color: var(--cor-verde);
+}
+
+.track-time {
+    position: relative;
+
+    margin-left: auto;
+    padding-right: 10px;
+
+    font-size: 8px;
+
+    z-index: 2;
+}
+
+/* artistas similares */
+
+.statistics-side {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.similar-artists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.similar-artists h3 {
+    font-size: 8px;
+    line-height: 1.1;
+}
+
+.similar-artists-list {
+    display: flex;
+
+    gap: 8px;
+}
+
+.similar-artists-list img {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+/* resumo estatisticas */
+
+.statistics-summary {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 55px;
+
+    padding: 10px 15px;
+
+    background-color: var(--cor-branco);
+    color: var(--cor-dark);
+}
+
+.summary-item h3 {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.summary-item p {
+    margin-top: 3px;
+
+    font-size: 7px;
+}
+
+.summary-item > span {
+    color: var(--cor-verde);
+
+    font-size: 18px;
+}
+
+/* historico */
+
+.listening-history {
+    margin: 0 70px 45px;
+
+    padding: 18px 20px 25px;
+
+    background-color: #31434d;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.history-header h2 {
+    font-size: 9px;
+}
+
+.history-header p {
+    margin-top: 2px;
+
+    font-size: 6px;
+}
+
+.history-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.history-date {
+    font-size: 7px;
+}
+
+.history-legend {
+    display: flex;
+
+    gap: 10px;
+}
+
+.history-legend span {
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    font-size: 5px;
+}
+
+.legend-color {
+    display: inline-block;
+
+    width: 6px;
+    height: 6px;
+}
+
+.this-week {
+    background-color: var(--cor-verde);
+}
+
+.last-week {
+    background-color: var(--cor-laranja);
+}
+
+/* grafico */
+
+.chart {
+    height: 170px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.chart-column {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 3px;
+
+    flex: 1;
+}
+
+.chart-bar {
+    display: block;
+
+    width: 20px;
+}
+
+.chart-bar.listened {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+
+.chart-column small {
+    position: absolute;
+
+    bottom: -16px;
+
+    font-size: 6px;
+}
+
+/* generos musicais */
+
+.music-genres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    padding: 20px 70px 80px;
+}
+
+.genre {
+    text-align: center;
+}
+
+.genre h2 {
+    margin-bottom: 12px;
+
+    font-size: 18px;
+}
+
+.genre-percentage {
+    position: relative;
+
+    width: 96px;
+    height: 96px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        var(--cor-verde) 0% 40%,
+        #31434d 40% 100%
+    );
+}
+
+.genre-percentage::before {
+    content: "";
+
+    position: absolute;
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background-color: var(--cor-dark);
+}
+
+.genre-percentage span {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* cores dos generos */
+
+.genre-rap .genre-percentage {
+    background: conic-gradient(
+        var(--cor-amarelo) 0% 40%,
+        #31434d 40% 100%
+    );
+}
+
+.genre-mpb .genre-percentage {
+    background: conic-gradient(
+        var(--cor-laranja) 0% 20%,
+        #31434d 20% 100%
+    );
+}
