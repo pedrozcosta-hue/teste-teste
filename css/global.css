@@ -15,6 +15,10 @@
 
 /* configuracoes gerais */
 
+main {
+    background-color: #191B32;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -74,6 +78,10 @@ img {
 
     padding-right: 32px;
     border-right: 1px solid var(--cor-amarelo);
+}
+
+.logo span {
+    color: var(--cor-branco);
 }
 
 /* links */
