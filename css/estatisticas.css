@@ -23,6 +23,10 @@
     font-size: 30px;
 }
 
+.artist-info span {
+    color: var(--cor-verde);;
+}
+
 .stat-label {
     margin-bottom: 6px;
 
@@ -61,8 +65,23 @@
 .artist-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 18%, 
+        black 82%,
+        transparent 100%
+    );
+
+       -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 18%,
+        black 82%,
+        transparent 100%
+    );
 }
 
 /* estatisticas principais */
@@ -161,6 +180,8 @@
     height: 100%;
 
     background-color: var(--cor-verde);
+
+    border-radius: 0px 30px 30px 0px;
 }
 
 .track-time {
@@ -229,6 +250,8 @@
 
     background-color: var(--cor-branco);
     color: var(--cor-dark);
+
+    border-radius: 0px 20px 0px 0px;
 }
 
 .summary-item h3 {
@@ -301,6 +324,10 @@
     font-size: 5px;
 }
 
+.history-legend span img {
+    width: 10px;
+}
+
 .legend-color {
     display: inline-block;
 
@@ -337,24 +364,88 @@
     align-items: flex-end;
     justify-content: center;
 
-    gap: 3px;
-
     flex: 1;
 }
 
 .chart-bar {
     display: block;
 
-    width: 20px;
+    width: 24px;
 }
 
-.chart-bar.listened {
+.chart-bar.listened-1 {
     height: 100px;
 
     background-color: var(--cor-verde);
 }
 
-.chart-bar.tracks {
+.chart-bar.tracks-1 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-2 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-2 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-3 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-3 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-4 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-4 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-5 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-5 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-6 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-6 {
+    height: 55px;
+
+    background-color: var(--cor-laranja);
+}
+.chart-bar.listened-7 {
+    height: 100px;
+
+    background-color: var(--cor-verde);
+}
+
+.chart-bar.tracks-7 {
     height: 55px;
 
     background-color: var(--cor-laranja);
@@ -404,8 +495,8 @@
     border-radius: 50%;
 
     background: conic-gradient(
-        var(--cor-verde) 0% 40%,
-        #31434d 40% 100%
+        var(--cor-verde) 100%,
+        #31434d
     );
 }
 
@@ -419,13 +510,13 @@
 
     border-radius: 50%;
 
-    background-color: var(--cor-dark);
+    background-color: #191B32;
 }
 
 .genre-percentage span {
     position: relative;
 
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -433,14 +524,14 @@
 
 .genre-rap .genre-percentage {
     background: conic-gradient(
-        var(--cor-amarelo) 0% 40%,
-        #31434d 40% 100%
+        var(--cor-amarelo) 100%,
+        #31434d
     );
 }
 
 .genre-mpb .genre-percentage {
     background: conic-gradient(
-        var(--cor-laranja) 0% 20%,
-        #31434d 20% 100%
+        var 100%,
+        #31434d
     );
 }
