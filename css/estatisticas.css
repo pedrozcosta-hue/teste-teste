@@ -63,8 +63,6 @@
 }
 
 .artist-image img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 
     mask-image: linear-gradient(
@@ -120,7 +118,8 @@
     display: flex;
     align-items: center;
 
-    height: 38px;
+    height: 47px;
+    width: 95%;
 
     overflow: hidden;
 
@@ -152,14 +151,14 @@
 .track-info span {
     display: block;
 
-    font-size: 7px;
-    font-weight: 600;
+    font-size: 8px;
+    font-weight: 550;
 }
 
 .track-info small {
     display: block;
 
-    font-size: 5px;
+    font-size: 8px;
 }
 
 .track-progress {
@@ -190,9 +189,8 @@
     margin-left: auto;
     padding-right: 10px;
 
-    font-size: 8px;
-
-    z-index: 2;
+    font-size: 12px;
+    font-weight: 750;
 }
 
 /* artistas similares */
@@ -211,8 +209,8 @@
 }
 
 .similar-artists h3 {
-    font-size: 8px;
-    line-height: 1.1;
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .similar-artists-list {
@@ -222,8 +220,8 @@
 }
 
 .similar-artists-list img {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
 
@@ -236,7 +234,7 @@
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
+    gap: 30px;
 }
 
 .summary-item {
@@ -246,7 +244,7 @@
 
     min-height: 55px;
 
-    padding: 10px 15px;
+    padding: 10px 10px 15px;
 
     background-color: var(--cor-branco);
     color: var(--cor-dark);
@@ -255,20 +253,14 @@
 }
 
 .summary-item h3 {
-    font-size: 9px;
-    font-weight: 600;
+    font-size: 13px;
 }
 
 .summary-item p {
     margin-top: 3px;
 
-    font-size: 7px;
-}
-
-.summary-item > span {
-    color: var(--cor-verde);
-
-    font-size: 18px;
+    font-size: 11px;
+    font-weight: 750;
 }
 
 /* historico */
@@ -294,7 +286,7 @@
 .history-header p {
     margin-top: 2px;
 
-    font-size: 6px;
+    font-size: 7px;
 }
 
 .history-info {
@@ -346,7 +338,7 @@
 /* grafico */
 
 .chart {
-    height: 170px;
+    height: 200px;
 
     display: flex;
     align-items: flex-end;
@@ -374,79 +366,79 @@
 }
 
 .chart-bar.listened-1 {
-    height: 100px;
+    height: 120px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-1 {
-    height: 55px;
+    height: 60px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-2 {
-    height: 100px;
+    height: 90px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-2 {
-    height: 55px;
+    height: 50px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-3 {
-    height: 100px;
+    height: 130px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-3 {
-    height: 55px;
+    height: 60px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-4 {
-    height: 100px;
+    height: 110px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-4 {
-    height: 55px;
+    height: 60px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-5 {
-    height: 100px;
+    height: 160px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-5 {
-    height: 55px;
+    height: 90px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-6 {
-    height: 100px;
+    height: 140px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-6 {
-    height: 55px;
+    height: 70px;
 
     background-color: var(--cor-laranja);
 }
 .chart-bar.listened-7 {
-    height: 100px;
+    height: 160px;
 
     background-color: var(--cor-verde);
 }
 
 .chart-bar.tracks-7 {
-    height: 55px;
+    height: 80px;
 
     background-color: var(--cor-laranja);
 }
@@ -456,7 +448,7 @@
 
     bottom: -16px;
 
-    font-size: 6px;
+    font-size: 8px;
 }
 
 /* generos musicais */
@@ -531,7 +523,7 @@
 
 .genre-mpb .genre-percentage {
     background: conic-gradient(
-        var 100%,
+        var(--cor-laranja) 100%,
         #31434d
     );
 }
